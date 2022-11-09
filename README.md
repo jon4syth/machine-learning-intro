@@ -39,9 +39,9 @@ Today I'm going to talk about the basics of a neural network without getting int
 
 - $1 \over 1 + e^-x$ - the sigmoid function, the x is the product from the matrix multiplication for this node's incoming inputs and weights
 
-- $ (t - e)^2 $
+- $(t - e)^2$
 
-- $ a \cdot E_k \cdot O_k(1 - O_k) \cdot^T_j $
+- $a \cdot E_k \cdot O_k(1 - O_k) \cdot^T_j$
 
 
 
