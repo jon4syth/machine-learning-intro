@@ -34,7 +34,17 @@ Neural networks are perhaps more accurately called artificial neural networks.  
 
 Today I'm going to talk about the basics of a neural network without getting into the various modern enhancements that have come in recent years.  This foundation neural networks is essential for understanding the more advanced and improvements, since they are built on this same foundation.
 
-## Mathematical Components of a Neural Network
+### Mathematical Components of a Neural Network
+- $W \cdot I$ - weights (aka parameters) multiplied by the inputs using matrix multiplication, hence the dot-product notation.
+
+- $1 \over 1 + e^-x$ - the sigmoid function, the x is the product from the matrix multiplication for this node's incoming inputs and weights
+
+- $ (t - e)^2 $
+
+- $ a \cdot E_k \cdot O_k(1 - O_k) \cdot^T_j $
+
+
+
 
 ### Training
 To train a neural network, we feed it inputs in the form of numbers that represent the type of items that a completely trained neural network will be expected to identify or categorize when it is deployed into production.  These items could be images, pieces of text, audio input, etc.  Whatever the actual real-world representation of these items, they need to be converted into numbers, as that is what a neural network works with.  It doesn't actually know what it is doing, it just is very fast at doing computations when ran by a computer.
