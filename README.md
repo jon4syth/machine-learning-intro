@@ -41,7 +41,7 @@ Today I'm going to talk about the basics of a neural network without getting int
 
 - We need a loss function such as: $$error = (t - o)^2$$ where $t$ is the target value and $o$ is the output of a final or head node.
 
-- The derivative of the loss function or error with respect to current weights: $$a \cdot E_k \cdot O_k(1 - O_k) \cdot^T_j$$ where $a$ = learning rate, $E_k$ = total error, $O_k$ = output of final nodes
+- The derivative of the loss function or error with respect to current weights multiplied by the derivative of the sigmoid function (this is almost correct): $$a \cdot E_k \cdot O_k(1 - O_k) \cdot^T_j$$ where $a$ = learning rate, $E_k$ = total error, $O_k$ = output of final nodes
 
 
 
