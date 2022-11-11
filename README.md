@@ -35,13 +35,13 @@ Neural networks are perhaps more accurately called artificial neural networks.  
 Today I'm going to talk about the basics of a neural network without getting into the various modern enhancements that have come in recent years.  This foundation neural networks is essential for understanding the more advanced and improvements, since they are built on this same foundation.
 
 ### Mathematical Components of a Neural Network
-- Input combined with weights (aka parameters): $$weight \cdot input = W \cdot I$$
+- We combine inputs with weights (aka parameters): $$weight \cdot input = W \cdot I$$
 
-- The sigmoid function for a node's output: $$1 \over 1 + e^{-x}$$ where $e \approx 2.718$ and $x = W \cdot I$ from above
+- We can use the sigmoid function for a node's output: $$1 \over 1 + e^{-x}$$ where $e \approx 2.718$ and $x = W \cdot I$ from above
 
-- The loss function: $$(t - e)^2$$ where $t$ is the target value and $e$ is the error
+- We need a loss function such as: $$error = (t - o)^2$$ where $t$ is the target value and $o$ is the output of a final or head node.
 
-- The derivative of error with respect to current weights: $$a \cdot E_k \cdot O_k(1 - O_k) \cdot^T_j$$ where $a$ = learning rate, $E_k$ = total error, $O_k$ = output of final node
+- The derivative of the loss function or error with respect to current weights: $$a \cdot E_k \cdot O_k(1 - O_k) \cdot^T_j$$ where $a$ = learning rate, $E_k$ = total error, $O_k$ = output of final nodes
 
 
 
